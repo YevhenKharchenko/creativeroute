@@ -1,0 +1,70 @@
+.gameplay-section {
+  background: #b2e0d5;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-container {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 191px;
+  }
+}
+
+.gameplay-img {
+  @include media(desktop) {
+    min-width: 217px;
+  }
+}
+
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    gap: 22px;
+    max-width: 350px;
+  }
+}
+
+.gameplay-list-item {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.puzzle-icon {
+  min-width: 36px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1e1e1e;
+
+  @include media(desktop) {
+  }
+}
