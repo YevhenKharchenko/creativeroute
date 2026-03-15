@@ -1,15 +1,17 @@
 .header {
-  background: #c0adc0;
+  background: transparent;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
+    background: none;
   }
 }
 
 .header-context {
+  background: transparent;
 }
 
 .header-bg-wrapper {
@@ -30,6 +32,7 @@
 }
 
 .header-bg-wrapper-context {
+  background-image: none;
 }
 
 .header-container {
@@ -59,11 +62,11 @@
 }
 
 .nav-list-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #1e1e1e;
+  color: #f5efe6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +78,6 @@
   &:focus,
   &:active,
   &.active {
-    color: #2194c3;
   }
 }
 
@@ -90,4 +92,17 @@
 }
 
 .menu-icon {
+}
+
+.close-icon {
+}
+
+.close-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
 }

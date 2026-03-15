@@ -1,5 +1,5 @@
 .footer {
-  background: #b2e0d5;
+  background: linear-gradient(0deg, #eac274 0%, #ea9e31 100%);
   padding-top: 34px;
   padding-bottom: 34px;
 
@@ -37,12 +37,18 @@
 .footer-link {
   display: flex;
   align-items: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.6;
-  text-transform: uppercase;
-  color: #1e1e1e;
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(154, 68, 207) 0%,
+    rgb(48, 41, 83) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
@@ -54,11 +60,18 @@
 }
 
 .footer-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: #1e1e1e;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(154, 68, 207) 0%,
+    rgb(48, 41, 83) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @include media(desktop) {
     text-align: center;
