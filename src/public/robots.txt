@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://gamerloo.com/sitemap.xml
+Sitemap: https://creativeroute.pro/sitemap.xml

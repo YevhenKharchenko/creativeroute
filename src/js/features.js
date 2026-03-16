@@ -1,9 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-const featuresLeftArrow = document.getElementById('featuresLeftArrow');
-const featuresRightArrow = document.getElementById('featuresRightArrow');
-
 let featuresSwiper;
 
 featuresSwiper = new Swiper('.features-swiper-container', {
@@ -19,10 +16,11 @@ featuresSwiper = new Swiper('.features-swiper-container', {
   grabCursor: true,
   breakpoints: {
     1440: {
-      slidesPerView: 4,
+      slidesPerView: 6,
       centeredSlides: false,
       allowTouchMove: false,
       grabCursor: false,
+      spaceBetween: 0,
     },
   },
 
@@ -31,25 +29,6 @@ featuresSwiper = new Swiper('.features-swiper-container', {
       document
         .querySelector('.features-swiper-container')
         .classList.add('show');
-      updateFeaturesArrows(swiper);
-    },
-    slideChange(swiper) {
-      updateFeaturesArrows(swiper);
     },
   },
-});
-
-updateFeaturesArrows(featuresSwiper);
-
-function updateFeaturesArrows(swiper) {
-  featuresLeftArrow.disabled = swiper.isBeginning;
-  featuresRightArrow.disabled = swiper.isEnd;
-}
-
-featuresLeftArrow.addEventListener('click', () => {
-  featuresSwiper.slidePrev();
-});
-
-featuresRightArrow.addEventListener('click', () => {
-  featuresSwiper.slideNext();
 });
